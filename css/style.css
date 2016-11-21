@@ -1,14 +1,147 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
 body {
-	background-color: silver;
+	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/b8/6f/b5/b86fb58651ac30c27da1ef52d16e9b21.jpg);
+	background-position: 0px 32%;
 	font-family: sans-serif;
 }
 
 #level_title {
-	font-size: 18px;
-	color: black;		
+	font-size: 125px;
+	color: rgb(112, 11, 11);		
 	font-weight: bold;
+	margin: 30px;
+	font-family: chiller;
+}
+#container {
+	width: 800px;
+	margin-top: 10%;
+	height: 600px;
+	margin-right: 25%;
+	float: right;
+}
+button	{
+	display: flex;
+	flex-direction: column;
+	margin-left: 30px;
+	padding: 30px;
+	margin-bottom: 20px;
+	color: white;
+	background-color: black;
+	border-color: rgb(112, 11, 11);
+	margin-right: 0px;
+	width: 100%;
+}
+button:hover, button:active	 {
+	transform: scale(1.15); 
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+}
+img.level_image {
+	width: 800px;
+	height: 600px;
+}
+nav {
+	width: 500px;
+	margin-right: 0px;
+	display: inline-block;
+}
+main{
+	width: 600px;
+	display: inline-block;
+}
+img.fence{
+	width: 60px;
+	height: auto;
+	position: absolute;
+	margin-left: 370px;
+    margin-top: 320px;
+    visibility: hidden;
+}
+form#code{
+	margin-left: 1500px;
+	display: inline;
+	visibility: hidden;
+}
+img.cassette{
+	width: 130px;
+	height: auto;
+	position: absolute;
+	margin-top: 490px;
+	margin-left: 675px;
+	transform: rotatez(-20deg);
+	visibility: hidden;
+}
+img.cassette:hover, img.cassette:active{
+	transform: scale(1.15); 
+	transition: all .2s ease-in-out;
+
+}
+p#cass {
+	width: 500px;
+	margin-left: 30px;
+	color: rgb(140, 12, 19);
+	font-family: chiller;
+	font-size: 35px;
+	visibility: hidden;
+}
+img.nokia {
+	width: 75px;
+	height: auto;
+	position: absolute;
+	margin-top: 450px;
+	margin-left: 300px;
+	visibility: hidden;
 }
 
-#level_image {
-	height: 500px;
+img.clipboard {
+	width: 70px;
+	height: auto;
+	position: absolute;
+	margin-left: 600px;
+	margin-top: 420px;
+	transform: rotateX(50deg);
+	visibility: hidden;
+}
+img.key {
+	position: absolute;
+	width: 20px;
+	height: auto;
+	margin-left: 200px;
+	margin-top: 300px;
+	visibility: hidden
+}
+img.hint{
+	width: 60px;
+	position: absolute;
+	margin-left: 360px;
+	margin-top: 29px;
+	visibility: hidden;
+}
+img.wolf{
+	width: 50px;
+	position: absolute;
+	margin-top: 430px;
+	margin-left:450px;
+	visibility: hidden;
+
+}
+img.knife{
+	width: 50px;
+	position: absolute;
+	margin-top: 395px;
+	margin-left: 400px;
+	visibility: hidden;
+}
+p#gameover {
+
+    margin-top: 60px;
+    margin-left: 720px;
+    color: rgb(140, 12, 19);
+	font-family: chiller;
+	font-size: 35px;
+	visibility: hidden;
 }

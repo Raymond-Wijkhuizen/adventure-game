@@ -11,20 +11,40 @@
 
 	<section id="status"></section>
 
-	<section id="level_title">Start</section>
+	<section id="level_title">The Chambers</section>
+<form id="code" method="post" onsubmit="return validateForm()" >
+<input type="text" name="check" value="0000">
+<input type="submit" name="submit" name="send" value="Try combination">
+</form>
 
 	<nav>
 
-		<button id="option1" onclick="javascript:Level1()">Optie 1</button>
-		<button id="option2">Optie 2</button>
-		<button id="option3">Optie 3</button>
+		<button id="option1" onclick="javascript:room1(); javascript:showPhone(); ">Start game</button>
+		<button id="option2"onclick="javascript:uitleg();">Before you play</button>
+		<button id="option3"onclick="javascript:map();">Map</button>
 
 	</nav>
-
-	<img id="level_image" class="level_image" src="img/rpg.png">
+	<p id="cass">
+	"There's only one th1ng in l1fe that counts. W1thout 1t no one w1ll survive. You took 1t away from me..."
+	</p>
 
 </main>
+<div id="container">
+<img id="nokia" class="nokia" onclick="javascript:timer();" src="img/nokia.png">
+<img id="hint" class="hint" src="img/clue.png">
+<img id="fence" class="fence" onclick="javascript:code();" src="img/fence.png">
+<img id="cassette" class="cassette" onclick="javascript:showParagraph();" src="img/cassette.png">
+<img id="key" class="key" onclick="javascript:pickupItem(); javascript:timer();" src="img/key.png">
+<img id="knife" class="knife" onclick="javascript:pickupKnife();" src="img/knife.png">
+<img id="wolf" class="wolf" onclick="javascript:deathCheck();" src="img/wolf.png">
+<img id="clipboard" class="clipboard" onclick="javascript:hidePhone(); javascript:hideClipboard(); javascript:level8();" src="img/clipboard.png">
+<img id="level_image" class="level_image" src="">
+</div>
+	<p id="gameover">
+		Refresh te page to start again
+	</p>
 
-	<script src="js/game.js" type="text/javascript" ></script>
+	<script src="game.js" type="text/javascript" ></script>
+	<audio autoplay="autoplay" hidden="hidden"> <source src="music/music.mp3" type="audio/mpeg"">
 </body>
 </html>
